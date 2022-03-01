@@ -20,7 +20,7 @@ export default function NavLink({
   ...rest
 }: NavLInkProps) {
   return (
-    <ActiveLink href={href} passHref>
+    <ActiveLink href={href} passHref shouldMatchExactHref={true}>
       <ChakraLink display="flex" {...rest}>
         <Icon as={icon} fontSize="20" />
         <Text ml="1" fontWeight="medium">
